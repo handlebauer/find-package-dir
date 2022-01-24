@@ -27,13 +27,12 @@ In the above tree, `find-package-dir` will locate `Users/handlebauer/project`
 
 #### ESM
 
-ESM import
 ```js
 import { findPackageDir } from '@hbauer/find-package-dir'
 const packageDir = findPackageDir() // = `Users/handlebauer/project`
 ```
 
-CommonJS
+#### CommonJS
 ```js
 const { findPackageDir } = require('@hbauer/find-package-dir')
 const packageDir = findPackageDir() // = `Users/handlebauer/project`
