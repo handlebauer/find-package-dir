@@ -1,0 +1,37 @@
+{
+  "name": "@hbauer/find-package-dir",
+  "version": "0.1.0",
+  "description": "Finds base package directory",
+  "type": "module",
+  "main": "lib/index.cjs",
+  "module": "lib/index.js",
+  "exports": {
+    "require": "./lib/index.cjs",
+    "import": "./lib/index.js"
+  },
+  "files": ["lib"],
+  "repository": "https://github.com/handlebauer/find-package-dir",
+  "author": "Donald Geddes <hi@donaldgeddes.ca>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "test": "ava"
+  },
+  "prettier": "@hbauer/prettier-config",
+  "eslintConfig": {
+    "extends": "@hbauer/eslint-config"
+  },
+  "devDependencies": {
+    "@hbauer/eslint-config": "^1.2.1",
+    "@hbauer/prettier-config": "^1.1.0",
+    "ava": "^4.0.1",
+    "eslint": "^8.7.0",
+    "prettier": "^2.5.1",
+    "rollup": "^2.66.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
