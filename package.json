@@ -1,6 +1,6 @@
 {
   "name": "@hbauer/find-package-dir",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Finds base package directory",
   "type": "module",
   "main": "lib/index.cjs",
@@ -9,7 +9,9 @@
     "require": "./lib/index.cjs",
     "import": "./lib/index.js"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "repository": "https://github.com/handlebauer/find-package-dir",
   "author": "Donald Geddes <hi@donaldgeddes.ca>",
   "publishConfig": {
