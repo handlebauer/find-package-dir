@@ -21,7 +21,7 @@ $ yarn add @hbauer/find-package-dir
               └── your-library
           └── package.json
 ```
-In the above tree, `find-package-dir` will locate `Users/handlebauer/project`
+In the above tree, `find-package-dir` will locate `/Users/handlebauer/project`
 
 ## Example
 
@@ -29,11 +29,11 @@ In the above tree, `find-package-dir` will locate `Users/handlebauer/project`
 
 ```js
 import { findPackageDir } from '@hbauer/find-package-dir'
-const packageDir = findPackageDir() // = `Users/handlebauer/project`
+const packageDir = findPackageDir() // = `/Users/handlebauer/project`
 ```
 
 #### CommonJS
 ```js
 const { findPackageDir } = require('@hbauer/find-package-dir')
-const packageDir = findPackageDir() // = `Users/handlebauer/project`
+const packageDir = findPackageDir() // = `/Users/handlebauer/project`
 ```
