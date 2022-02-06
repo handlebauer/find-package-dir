@@ -20,7 +20,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "run run test && npm run build",
+    "prepublishOnly": "npm run test && npm run build",
     "test": "ava"
   },
   "prettier": "@hbauer/prettier-config",
