@@ -1,6 +1,6 @@
 {
   "name": "@hbauer/find-package-dir",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Finds base package directory",
   "type": "module",
   "main": "lib/index.cjs",
