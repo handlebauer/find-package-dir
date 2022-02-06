@@ -24,7 +24,7 @@ export const findPackageDir = (target = 'package.json') => {
     return findUp(parent)
   }
 
-  // We first need to find @hbauer/zero's `package.json`
+  // We first need to find this package's `package.json`
   const self = findUp(cwd)
   // Then, search upwards from the parent directory...
   const parent = dirname(self)
